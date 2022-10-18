@@ -25,13 +25,51 @@ public class HelloWorld {
 		System.out.println ("\n" + sum1);
 		System.out.println (sum2);
 		System.out.println (sum3 + "\n");
+		if (sum3 > sum1) { //Print the line below "IF" the statement is true
+			System.out.println ("Sum3 is greater than Sum1!\n");
+		}
 		
 		int randomNum = (int)(Math.random() *101); //Random number generator between 0-100
 		System.out.println("Todays lottary number is:" + " " + randomNum + "\n");
+			if (randomNum>50) {
+				System.out.println("It's over 50");
+			}
+				else if(randomNum<50){
+				System.out.println("It's under 50");
+			}
+				else {
+				System.out.println("It's ORIMLIGT!");
+				}
+			String result = (randomNum > 50) ? "It's over 50!" : "It's under 50"; //Shorter code than the one above (Short hand if else)
+			System.out.println (result);
 		
-		if (x > y) { //Print the line below "IF" the statement is true
-			System.out.println ("X is greater than Y!");
+		int day = (int)(Math.random() *8); //+ 1;
+		switch (day) {
+		case 1:
+			System.out.println("Monday!");
+			break;
+		case 2:
+			System.out.println("Tuesday!");
+			break;
+		case 3:
+			System.out.println("Wednesday!");
+			break;
+		case 4:
+			System.out.println("Thursday!");
+			break;
+		case 5:
+			System.out.println("Friday!");
+			break;
+		case 6:
+			System.out.println("Saturday!");
+			break;
+		case 7:
+			System.out.println("Sunday!");
+			break;
+		default:
+			System.out.println("This is ORIMLIGT!");
 		}
+		
 	}
 
 }
