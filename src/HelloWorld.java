@@ -14,7 +14,7 @@ public class HelloWorld {
 		System.out.println ("The position of \"O\" in \"Lastname\" is:" + " " + fullName.indexOf("O")); //Position of letter
 		System.out.println ("The length of \"Fullname\" is:" + " " + fullName.length()); //Length of text
 		
-		int x = 15;
+		int x = 15; //
 		int y = 14;
 		int z = x + y;
 		System.out.println("My age is" + " " + z);
@@ -40,10 +40,11 @@ public class HelloWorld {
 				else {
 				System.out.println("It's ORIMLIGT!");
 				}
-			String result = (randomNum > 50) ? "It's over 50!" : "It's under 50"; //Shorter code than the one above (Short hand if else)
+			String result = (randomNum > 50) ? "It's over 50!" : "It's under 50!"; //Shorter code than the one above (Short hand if else)
 			System.out.println (result);
 		
-		int day = (int)(Math.random() *8); //+ 1;
+		int day = (int)(Math.random() *8); //+ 1; // The Math.random always starts from "0". You need to type +1; if you want it to start counting from 1
+		System.out.print("\nThe day of the week is:" + " ");
 		switch (day) {
 		case 1:
 			System.out.println("Monday!");
@@ -66,8 +67,8 @@ public class HelloWorld {
 		case 7:
 			System.out.println("Sunday!");
 			break;
-		default:
-			System.out.println("This is ORIMLIGT!");
+		default: //If the "Math.Random" is "0", this will be printed out
+			System.out.println("ORIMLIGT!");
 		}
 		
 	}
