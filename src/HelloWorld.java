@@ -14,7 +14,7 @@ public class HelloWorld {
 		System.out.println ("The position of \"O\" in \"Lastname\" is:" + " " + fullName.indexOf("O")); //Position of letter
 		System.out.println ("The length of \"Fullname\" is:" + " " + fullName.length()); //Length of text
 		
-		int x = 15; //
+		int x = 15;
 		int y = 14;
 		int z = x + y;
 		System.out.println("My age is" + " " + z);
@@ -70,6 +70,13 @@ public class HelloWorld {
 		default: //If the "Math.Random" is "0", this will be printed out
 			System.out.println("ORIMLIGT!");
 		}
+		
+		int i = 0;
+		while (i<=5) {
+			System.out.println ("\n" + i);
+			i++;
+		}
+		
 		
 	}
 
