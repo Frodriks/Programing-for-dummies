@@ -71,10 +71,10 @@ public class HelloWorld {
 			System.out.println("ORIMLIGT!");
 		}
 		
-		int i = 0;
-		while (i<=5) {
+		int i = 0; 
+		while (i<=5) { //Counts up top 5, then it stops
 			System.out.println ("\n" + i);
-			i++;
+			i++; //Adds +1 to the counting
 		}
 		
 		
