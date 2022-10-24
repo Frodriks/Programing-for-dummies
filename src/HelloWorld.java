@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class HelloWorld {
 	static void myMethod() { //Parameters and Arguments, single Parameter
@@ -25,6 +26,13 @@ public class HelloWorld {
 	}
 	
 	public static void main(String[] args) {
+	/*	String namn = "";							//Funtion for writing
+		Scanner inputValue = new Scanner(System.in);
+		System.out.println("What's your name? ");
+		namn = inputValue.nextLine();
+		System.out.println("Your name is: " + namn);
+	*/	
+		
 		myMethod();
 		yourMethod("Fredrik", 29);
 		yourMethod("Frida", 28);
@@ -163,6 +171,56 @@ public class HelloWorld {
 		//}
 		
 		
+		int gammalNog = 18;
+		if (gammalNog >= 18) {
+			System.out.println("\nWelcome sir!\n");
+		} 
+			else {
+				System.out.println("\nYou're not old enough\n");	
+		}
+		
+		
+		int g = 10,  h = 20;
+		int j = g + h;
+		System.out.println ("G is: " + g);
+		System.out.println ("H is: " + h);
+		System.out.println ("The total is; " + j + "\n");
+		g = g ^ h ^(h = g); //Code for switching variables between "g" and "h"
+		System.out.println("Now we have switched the values of 'G' and 'H'");
+		System.out.println("G is: " + g);
+		System.out.println("H is: " + h);
+		
+		int randomBRL = (int)(Math.random() *101); //Convert BRL to SEK
+		System.out.println("\nIt's " + randomBRL + " Brazilian Real");
+		double swedishKrona = (randomBRL * 2.64);
+		System.out.println("And that's equal to " + swedishKrona + " Swedish kroner\n");
+		
+		int randomNumA = (int)(Math.random() *100);
+		int randomNumB = (int)(Math.random() *100);
+		System.out.println ("The first number is: " + randomNumA);
+		System.out.println ("The second number is: " + randomNumB);
+		System.out.println ("The first + the second = " + (randomNumA + randomNumB));
+		System.out.println ("The first - the second = " + (randomNumA - randomNumB));
+		System.out.println ("The first * the second = " + (randomNumA * randomNumB));
+		System.out.println ("The first / the second = " + (randomNumA / randomNumB));
+		//Create a switchcase for this!
+		
+		//double f = 14;
+		int randomC = (int)(Math.random() *31);
+		double c = randomC; //Generates a random number between 0-30
+		double f = c * 1.8 + 32;
+		System.out.println("It's " + c + " degrees Celsius outside today");
+		System.out.println("And that's equal to " + f +  " degreed in Farenheit");
+		
+		int randomNumC =(int)(Math.random() *1001);
+		double discount = 0.13;
+		double total = 0.87;
+		System.out.println("\nThe price before the discount was " + randomNumC);
+		System.out.println("The price after the discount " + String.format("%.2f", (randomNumC * total))); //String.format("%.2f") för att korta ner decimalerna
+		System.out.println("The total discount is " + (randomNumC * discount));
+		
+		
+		System.out.println("\n");
 		myMethod();
 	}
 
