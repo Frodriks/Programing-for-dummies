@@ -195,29 +195,55 @@ public class HelloWorld {
 		double swedishKrona = (randomBRL * 2.64);
 		System.out.println("And that's equal to " + swedishKrona + " Swedish kroner\n");
 		
-		int randomNumA = (int)(Math.random() *100);
-		int randomNumB = (int)(Math.random() *100);
+		int slumpa = (int)(Math.random() *4);
+		int randomNumA = 100;//(int)(Math.random() *100);
+		int randomNumB = 0;//(int)(Math.random() *100);
 		System.out.println ("The first number is: " + randomNumA);
 		System.out.println ("The second number is: " + randomNumB);
-		System.out.println ("The first + the second = " + (randomNumA + randomNumB));
-		System.out.println ("The first - the second = " + (randomNumA - randomNumB));
-		System.out.println ("The first * the second = " + (randomNumA * randomNumB));
-		System.out.println ("The first / the second = " + (randomNumA / randomNumB));
+		try {  //try catch = "try" running this code and if it fails "catch" it and write a error message, then continue with the program
+			switch (slumpa) {
+			case 0:
+				System.out.println ("The first + the second = " + (randomNumA + randomNumB));
+				break;
+			case 1:
+				System.out.println ("The first - the second = " + (randomNumA - randomNumB));
+				break;
+			case 2:
+				System.out.println ("The first * the second = " + (randomNumA * randomNumB));
+				break;
+			case 3:
+				System.out.println ("The first / the second = " + (randomNumA / randomNumB));
+				break;
+			default:
+				System.out.println("ORIMLIGT!\n");	
+			}
+		} catch (Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println("*************");
+			exp.printStackTrace();
+		} finally {
+			System.out.println("Koden fortsätter\n");
+		}
+	
+		
+		
+		
 		//Create a switchcase for this!
 		
 		//double f = 14;
 		int randomC = (int)(Math.random() *31);
 		double c = randomC; //Generates a random number between 0-30
 		double f = c * 1.8 + 32;
-		System.out.println("It's " + c + " degrees Celsius outside today");
+		System.out.println("\nIt's " + c + " degrees Celsius outside today");
 		System.out.println("And that's equal to " + f +  " degreed in Farenheit");
 		
 		int randomNumC =(int)(Math.random() *1001);
 		double discount = 0.13;
 		double total = 0.87;
 		System.out.println("\nThe price before the discount was " + randomNumC);
+		System.out.println("The total discount is " + String.format("%.2f", (randomNumC * discount)));
 		System.out.println("The price after the discount " + String.format("%.2f", (randomNumC * total))); //String.format("%.2f") för att korta ner decimalerna
-		System.out.println("The total discount is " + (randomNumC * discount));
+
 		
 		
 		System.out.println("\n");
