@@ -224,11 +224,6 @@ public class HelloWorld {
 		} finally {
 			System.out.println("Koden fortsätter\n");
 		}
-	
-		
-		
-		
-		//Create a switchcase for this!
 		
 		//double f = 14;
 		int randomC = (int)(Math.random() *31);
