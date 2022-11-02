@@ -193,7 +193,7 @@ public class HelloWorld {
 		int randomBRL = (int)(Math.random() *101); //Convert BRL to SEK
 		System.out.println("\nIt's " + randomBRL + " Brazilian Real");
 		double swedishKrona = (randomBRL * 2.64);
-		System.out.println("And that's equal to " + swedishKrona + " Swedish kroner\n");
+		System.out.println("And that's equal to " + String.format("%.2f", (swedishKrona)) + " Swedish kroner\n");
 		
 		int slumpa = (int)(Math.random() *4);
 		int randomNumA = 100;//(int)(Math.random() *100);
