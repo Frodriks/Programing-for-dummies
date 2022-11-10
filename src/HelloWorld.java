@@ -132,7 +132,7 @@ public class HelloWorld {
 		while (o < 6); //Stops counting at 5 because it prints as long as it's less than 6
 		
 		//For Loop -When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
-		for (int k = 0; k <= 10; k = k + 2) {
+		for (int k = 0; k < 10; k = k + 2) {
 			System.out.println("Yes");
 			
 		}
