@@ -1,5 +1,7 @@
+
 import java.util.*;
 import static java.lang.Math.*;
+import java.util.List;
 
 public class numbers {
 	
@@ -24,15 +26,14 @@ public class numbers {
 		List<Integer> random = new LinkedList<>();
 		
 		for (int j = 0; j < 10; j++) {
-		random.add((int)(Math.random() *11));
-		sum = sum + random.get(j);
-		
+			random.add((int)(Math.random() *11));
+			sum = sum + random.get(j);
 		}
 		
 		avg = sum/random.size();
-		System.out.println(random);
-		System.out.println(avg);
-		System.out.println(sum);
+		System.out.println("The random numbers are: " + random);
+		System.out.println("The average is: " + avg);
+		System.out.println("The total sum is: " + sum);
 			
 		
 		air();
@@ -58,6 +59,20 @@ public class numbers {
 		System.out.println("The area of the circle is: " + String.format("%.2f",(area))+ " cm");
 		
 		air();
+		
+		List<Integer> zeroToThirty = new LinkedList<>();
+		for (int k = 0; k < 30; k++) {
+			zeroToThirty.add((int)(Math.random() *11));	
+		}
+		
+		System.out.println(zeroToThirty);
+		
+		if (zeroToThirty.contains(5)) {
+			System.out.println("It contains 5!"); // hur printar jag ut hur många 5or den innehåller?
+		}
+		
+		
+		
 		
 		
 	}

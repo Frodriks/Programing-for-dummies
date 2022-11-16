@@ -7,7 +7,7 @@ public class ChangeIfZerooo {
 		System.out.println(" ");
 	}
 	
-	
+	//hur byter jag ut 0 till nästa index?
 
 	public static void main(String[] args) {
 		
