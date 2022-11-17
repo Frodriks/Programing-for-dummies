@@ -17,10 +17,22 @@ public class ChangeIfZerooo {
 		numbers.add(3);
 		numbers.add(5);
 		numbers.add(2); */
-		
-		int [] numbers = {1,0,3,5,2};
-		
+
 		int toFind = 0;
+		
+		int[] numbers = {1,0,3,5,2};
+		
+		for (int i = 0; i < numbers.length; i++) {
+			
+			if (numbers[i] == toFind) {  //Be läraren förklara detta för mig!!!
+				if (i == numbers.length-1) 
+				numbers[i] = numbers[i+1];
+			}
+		}
+		
+		
+		//System.out.print(numbers.toString());
+		
 		
 		boolean found = IntStream.of(numbers).anyMatch(n -> n == toFind);
 		
@@ -43,8 +55,8 @@ public class ChangeIfZerooo {
 		number.add(0);
 		number.add(1);
 		
-		for(int b : number) {
-			System.out.print(b + " ");
+		for(int i = 0; i < number.size() ;i++) {
+			System.out.print(number.get(i) + " ");
 		}
 		
 		air();
