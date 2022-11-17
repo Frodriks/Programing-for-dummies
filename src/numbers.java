@@ -61,15 +61,21 @@ public class numbers {
 		air();
 		
 		List<Integer> zeroToThirty = new LinkedList<>();
+		
 		for (int k = 0; k < 30; k++) {
 			zeroToThirty.add((int)(Math.random() *11));	
+			
 		}
 		
-		System.out.println(zeroToThirty);
+		//int [] frequenzy = new int [zeroToThirty];
 		
+		System.out.println("Numeber of iterations is : " + zeroToThirty.size());
+		System.out.println(zeroToThirty);
 		if (zeroToThirty.contains(5)) {
 			System.out.println("It contains 5!"); // hur printar jag ut hur många 5or den innehåller?
 		}
+		
+		System.out.println("It contains " + Collections.frequency(zeroToThirty, 5) + " fives!");
 		
 		
 		
