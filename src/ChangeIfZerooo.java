@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class ChangeIfZerooo {
@@ -11,12 +12,74 @@ public class ChangeIfZerooo {
 
 	public static void main(String[] args) {
 		
+		
+		
+		int [] intArray = new int [] {3, 0 ,0 ,4,1};
+		for(int i = 0; i < intArray.length; i++) {
+			if(intArray[i]==0) {
+				if (i == intArray.length-1) {
+					intArray[i] = intArray[0];
+				}else {
+					intArray[i] = intArray[i+1];
+				}
+			}
+			
+		}
+		System.out.println(Arrays.toString(intArray));
+		
+		
+		
+		int [] intArra = new int [] {1,0,1,1,0};
+		for(int i = 0; i < intArra.length; i++) {
+			if(intArra[i]==0) {
+				if (i == intArra.length-1) {
+					intArra[i] = intArra[0];
+				}else {
+					intArra[i] = intArra[i+1];
+				}
+			}
+			
+		}
+		System.out.println(Arrays.toString(intArra));
+		
+		/*int [] intArray = new int [] {};
+		for(int i = 0; i < intArray.length; i++) {
+			if(intArray[i]==0) {
+				if (i == intArray.length-1) {
+					intArray[i] = intArray[0];
+				}else {
+					intArray[i] = intArray[i+1];
+				}
+			}
+			
+		}
+		System.out.println(Arrays.toString(intArray));/*
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		/*ArrayList<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(1);
 		numbers.add(0);
 		numbers.add(3);
 		numbers.add(5);
-		numbers.add(2); */
+		numbers.add(2); 
 
 		int toFind = 0;
 		
@@ -28,7 +91,7 @@ public class ChangeIfZerooo {
 				if (i == numbers.length-1) 
 				numbers[i] = numbers[i+1];
 			}
-		}
+		} 
 		
 		
 		//System.out.print(numbers.toString());
@@ -39,11 +102,11 @@ public class ChangeIfZerooo {
 		if (found)
 			System.out.println(toFind);
 		
-		/*
+		
 		for(int a : numbers) {
 			System.out.print(a + " ");
 		}
-		*/
+		
 		
 		air();
 		air();
@@ -101,7 +164,7 @@ public class ChangeIfZerooo {
 		
 		for(int e : num) {
 			System.out.print(e + " ");
-		}
+		} */
 		
 
 	}

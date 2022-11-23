@@ -1,5 +1,9 @@
 
 public class tryCatch {
+	
+	static void air() {
+		System.out.println(" ");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -35,6 +39,10 @@ public class tryCatch {
 		}
 		
 		System.out.println("Slut på kod!");
+		
+		air();
+		
+		
 
 	}
 
