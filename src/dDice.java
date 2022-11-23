@@ -21,7 +21,7 @@ public class dDice {
 		
 		air();
 		
-		for (int i = 0; i < 10 ; i++) {
+		for (int i = 0; i < 3 ; i++) {
 			int randomNumber = getRandomBetweenNumbers(1, 6);
 			System.out.println(randomNumber);
 		}
