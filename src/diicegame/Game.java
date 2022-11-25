@@ -7,25 +7,45 @@ public class Game {
 	private Player secondPlayer;
 	
 	
-	
+	/*
 	public void requestPlayerNames() {
 		Scanner inputValue = new Scanner(System.in);
 		System.out.println("Please input name for first player: ");
 		String firstPlayerName = inputValue.nextLine();
 		firstPlayer.setName(firstPlayerName);
 		
+		
 		System.out.println("Please input name for second player: ");
 		String secondPlayerName = inputValue.nextLine();
 		secondPlayer.setName(secondPlayerName);
 		inputValue.close();
 		
-	}
+	} */
 	
-	public void requestPlayerThrows(int firstPlayer, int secondPlayer) {
+	public void requestPlayerNames() {
+		
+	
+			Scanner playerNames = new Scanner(System.in);
+			System.out.println("Please input name for first player: ");
+			String firstPlayerName = playerNames.nextLine();
+			firstPlayer.setName(firstPlayerName);
+			playerNames.close();
+		}
+		
+		
+		
+		/*System.out.println("Please input name for second player: ");
+		String secondPlayerName = playerNames.nextLine();
+		secondPlayer.setName(secondPlayerName);
+		playerNames.close();
+		
+	}
+	*/
+	public void requestPlayerThrows() {
 		
 	}
 	
-	public void comparePointsOfPlayers(int firstPlayer, int secondPlayer) {
+	public void comparePointsOfPlayers() {
 		
 	}
 	
