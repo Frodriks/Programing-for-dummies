@@ -1,30 +1,35 @@
 package diicegame;
 
-public class Player {
+public class Player{ //extends Game????
 	
-	private String name;
-	private int totalPoints;
+	private String name; //provade = " "  , men det funkade inte... fortfarande null...
+	private int totalPoints; // provade skriva in = 0..
 	
 	public Player (String inputName, int totalPoints) {
 		this.name = inputName;
 		this.totalPoints = totalPoints;
 	}
 	
-	public String getname() {
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
 		return name;
+	}
+	
+	public void settotalPoints(int totalPoints) {
+		this.totalPoints = totalPoints;
 	}
 	
 	public int gettotalPoints() {
 		return totalPoints;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
-	}
+
+		
 	
-	public void settotalPoints(int totalPoints) {
-		this.totalPoints = totalPoints;
-	}
+	
+	
 
 }
 
