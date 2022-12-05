@@ -1,31 +1,60 @@
 package diicegame;
 import java.util.Scanner;
 
-public class Game {
+public class Game{
 	
 	private Player firstPlayer;
 	private Player secondPlayer;
 	
 	
 	
+	/*
 	public void requestPlayerNames() {
 		Scanner inputValue = new Scanner(System.in);
 		System.out.println("Please input name for first player: ");
 		String firstPlayerName = inputValue.nextLine();
 		firstPlayer.setName(firstPlayerName);
 		
+		
 		System.out.println("Please input name for second player: ");
 		String secondPlayerName = inputValue.nextLine();
 		secondPlayer.setName(secondPlayerName);
 		//inputValue.close();
 		
-	}
+	} */
 	
+<<<<<<< HEAD
+=======
+	public void requestPlayerNames() {
+		
+	
+			Scanner playerNames = new Scanner(System.in);
+			System.out.println("Please input name for first player: ");
+			String firstPlayerName = playerNames.nextLine();
+			firstPlayer.setName(firstPlayerName);
+			System.out.println(firstPlayer.getName()); //funkar inte.... hur ska jag göra!!??
+			playerNames.close();
+		}
+		
+		
+		
+		/*System.out.println("Please input name for second player: ");
+		String secondPlayerName = playerNames.nextLine();
+		secondPlayer.setName(secondPlayerName);
+		playerNames.close();
+		
+	}
+	*/
+>>>>>>> 255f87db868637e3a62430f45f740b39acabf25d
 	public void requestPlayerThrows() {
 		
 	}
 	
+<<<<<<< HEAD
 	public void comparePointsOfPlayers(firstPlayer, secondPlayer) {
+=======
+	public void comparePointsOfPlayers() {
+>>>>>>> 255f87db868637e3a62430f45f740b39acabf25d
 		
 	}
 	
