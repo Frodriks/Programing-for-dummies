@@ -13,9 +13,9 @@ public class Calculator {
 	
 	public static void main(String[] args) {
 		
-		boolean a;
+		boolean a = true;
 		char operators;
-		Double firstNumber, secondNumber, awnser;
+		Double firstNumber, secondNumber, answer;
 		
 		/* Något blev tokigt :S
 		 * 
@@ -43,19 +43,30 @@ public class Calculator {
 			}
 			
 		}
+		
+		//operators = getOperator();
+		// firstNumber = getFirstNumber();
+		//secondNumber = getSecondNumber();
+		//calculateAnswerAndPrint(operators, firstNumber, secondNumber);
+		//
+		//Gör metoder av allt och kalla på dom i en Mainklass
+		//gör en while(true) på alla metoder i Mainklassen (ex. tryck 1 för att avsluta, tryck 2 för att kör igen)
+	
+		
 		// ask users to enter operator
 		while(true) {
 			try {
 				Scanner input = new Scanner (System.in); 
 				System.out.println("Choose an operator: + , - , * , /");
 				operators = input.next().charAt(0); 	//det är bara den första som är viktig. Funkar att skriva ex. +hflsdhfs4832, och då blir det +
-				//b = false;								Hur gör jag för att den bara godkänner om det är en operator??
+														//Hur gör jag för att den bara godkänner om det är en operator??
 				
-				if(operators == '+') {
+				if(operators == '+' || operators == '-'  || operators == '*' || operators == '/'){
+					//return operators;
 					a = false;
 					break;
 				}
-				if(operators == '-') {
+				/*if(operators == '-') {
 					a = false;
 					break;
 				}
@@ -67,12 +78,15 @@ public class Calculator {
 					a = false;
 					break;
 				}
+				*/
 				else {
 					System.out.println("Invalid operator");
 				}
-			}catch(InputMismatchException e) {
+			}catch (Exception e) {
+				System.out.println(e.getMessage());
+				System.out.println("*************");
+				e.printStackTrace();
 			}
-			
 			
 		}
 		
@@ -109,20 +123,20 @@ public class Calculator {
 			switch (operators) {
 		// performs addition between numbers
 				case '+':
-					awnser = firstNumber + secondNumber;
-					System.out.println(firstNumber + " + " + secondNumber + " = " + awnser);
+					answer = firstNumber + secondNumber;
+					System.out.println(firstNumber + " + " + secondNumber + " = " + answer);
 					break;
 				case '-':
-					awnser = firstNumber - secondNumber;
-					System.out.println(firstNumber + " - " + secondNumber + " = " + awnser);
+					answer = firstNumber - secondNumber;
+					System.out.println(firstNumber + " - " + secondNumber + " = " + answer);
 					break;
 				case '*':
-					awnser = firstNumber * secondNumber;
-					System.out.println(firstNumber + " * " + secondNumber + " = " + awnser);
+					answer = firstNumber * secondNumber;
+					System.out.println(firstNumber + " * " + secondNumber + " = " + answer);
 					break;
 				case '/':
-					awnser = firstNumber / secondNumber;
-					System.out.println(firstNumber + " / " + secondNumber + " = " + awnser);
+					answer = firstNumber / secondNumber;
+					System.out.println(firstNumber + " / " + secondNumber + " = " + answer);
 					break;	
 			}
 		} catch (Exception e) {
@@ -135,7 +149,11 @@ public class Calculator {
 		
 		
 	}
+	
+	/*public static char getOperator() {
 		
+	}
+	*/	
 
 }
 
