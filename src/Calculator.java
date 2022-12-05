@@ -44,43 +44,12 @@ public class Calculator {
 			
 		}
 		// ask users to enter operator
-<<<<<<< HEAD
 		while(true) {
 			try {
 				Scanner input = new Scanner (System.in); 
 				System.out.println("Choose an operator: + , - , * , /");
 				operators = input.next().charAt(0); 	//det är bara den första som är viktig. Funkar att skriva ex. +hflsdhfs4832, och då blir det +
 				//b = false;								Hur gör jag för att den bara godkänner om det är en operator??
-=======
-		System.out.println("Choose and operator: + , - , * or /");
-		operator = input.next().charAt(0);
-		
-		// ask users to enter numbers
-		System.out.println("Enter your first number");
-		number1 = input.nextDouble();
-		System.out.println("Enter your second number");
-		number2 = input.nextDouble();
-
-		
-		switch (operator) {
-		// performs operations between numbers
-			case '+':
-				result = number1 + number2;
-				System.out.println(number1 + " + " + number2 + " = " + result);
-				break;
-			case '-':
-				result = number1 - number2;
-				System.out.println(number1 + " - " + number2 + " = " + result);
-				break;
-			case '*':
-				result = number1 * number2;
-				System.out.println(number1 + " * " + number2 + " = " + result);
-				break;
-			case '/':
-				result = number1 / number2;
-				System.out.println(number1 + " / " + number2 + " = " + result);
-				break;
->>>>>>> 255f87db868637e3a62430f45f740b39acabf25d
 				
 				if(operators == '+') {
 					a = false;
